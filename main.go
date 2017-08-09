@@ -313,7 +313,7 @@ func (actor *Actor) drawSwimLane(maxTime uint) {
 		x-LabelWidth/2, HeaderHeight-LabelHeight, LabelWidth, LabelHeight,
 	)
 	fmt.Printf(`<text x="%d" y="%g" font-size="%g" text-anchor="middle">%s</text>`,
-		x, HeaderHeight-0.25*LabelHeight, 0.7*LabelHeight, actor.Name,
+		x, HeaderHeight-0.25*LabelHeight, 0.7*LabelHeight, actor.Label,
 	)
 	fmt.Printf(`<line x1="%d" x2="%d" y1="%d" y2="%d" stroke="black" stroke-dasharray="5,5" />`,
 		x, x, HeaderHeight, HeaderHeight+(maxTime+1)*SwimlaneStep,
