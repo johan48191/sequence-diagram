@@ -1,0 +1,22 @@
+start user
+label user Alice
+
+call user m1 GET /index.html
+receive web m1
+
+call web m2 query
+receive database m2
+
+return database m3 results
+receive web m3
+
+send web m4 all the data
+start tracker
+label tracker NSA
+receive tracker m4
+
+stop tracker
+return web m5 web page
+receive user m5
+
+stop user
